@@ -18,7 +18,7 @@ const About = () => {
                 Jeg hedder Rune og er 24 år gammel. Jeg læser multimediedesign 
                 på Erhvervs Akademi Aarhus, og er nu på 3 semester på linjen 
                 frontend developer. <br />   <br /> 
-                Jeg brænder meget for det jeg laver, og 
+                Jeg brænder meget for det, jeg laver, og 
                 drømmer om at leve af min passion for programmering.
                 Som person er jeg meget smilende og imødekommende. 
                 Jeg har en positiv og perfektionistisk tilgang, når det gælder at løse 
