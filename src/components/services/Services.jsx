@@ -81,7 +81,7 @@ const Services = () => {
             <div className="services__content">
                 <div>
                     <i className="uil uil-edit services__icon"></i>
-                    <h3 className="services__title">Gafisk <br /> Design</h3>
+                    <h3 className="services__title">Grafisk <br /> Design</h3>
                 </div>
 
                 <span onClick={() => toggleTab(3)} className="services__button">

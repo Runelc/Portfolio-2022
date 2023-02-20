@@ -2,8 +2,23 @@ import React from 'react'
 import "./about.css"; 
 import AboutImg from "../../assets/about.jpg"; 
 import CV from "../../assets/Rune-Cv.pdf"; 
+import { useState, useEffect } from 'react';
 
 const About = () => {
+  /* Updating of age every year */
+  const [age, setAge] = useState(0);
+
+  useEffect(() => {
+    const birthDate = new Date('1997-11-27');
+    const today = new Date();
+    let years = today.getFullYear() - birthDate.getFullYear();
+    if (today.getMonth() < birthDate.getMonth() || 
+      (today.getMonth() === birthDate.getMonth() && today.getDate() < birthDate.getDate())) {
+      years--;
+    }
+    setAge(years);
+  }, []);
+
   return (
     <section className="about section" id="about">
         <h2 className="section__title">Om mig</h2>
@@ -15,7 +30,7 @@ const About = () => {
             <div className="about__data">
 
                 <p className="about__description">
-                Jeg hedder Rune og er 24 år gammel. Jeg læser multimediedesign 
+                Jeg hedder Rune og er {age} år gammel. Jeg læser multimediedesign 
                 på Erhvervs Akademi Aarhus, og er nu på 3 semester på linjen 
                 frontend developer. <br />   <br /> 
                 Jeg brænder meget for det, jeg laver, og 
