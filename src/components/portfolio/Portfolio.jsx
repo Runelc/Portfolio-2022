@@ -9,7 +9,7 @@ export default function Portfolio() {
 
     useEffect(() => {
         async function getData() {
-            const response = await fetch("http://headless.runelc.dk/wp-json/wp/v2/posts?_embed");
+            const response = await fetch("https://headless.runelc.dk/wp-json/wp/v2/posts?_embed");
             const data = await response.json();
 						console.log(data);
             setPosts(data);
