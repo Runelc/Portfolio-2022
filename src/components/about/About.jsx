@@ -31,7 +31,7 @@ const About = () => {
 
                 <p className="about__description">
                 Jeg hedder Rune og er {age} år gammel. Jeg læser multimediedesign 
-                på Erhvervs Akademi Aarhus, og er nu på 3 semester på linjen 
+                på Erhvervs Akademi Aarhus, og er nu på 4 semester på linjen 
                 frontend developer. <br />   <br /> 
                 Jeg brænder meget for det, jeg laver, og 
                 drømmer om at leve af min passion for programmering.
